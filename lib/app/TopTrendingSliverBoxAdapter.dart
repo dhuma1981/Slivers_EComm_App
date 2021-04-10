@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:slivers_ecomm_demo/fakeStoreResponsePojo.dart';
+import 'package:slivers_ecomm_demo/app/fakeStoreResponsePojo.dart';
 
 class TopTrendingSliverBoxAdapter extends StatelessWidget {
   // final FakeStoreResponsePojo objFakeStoreResPojo;
@@ -8,7 +8,7 @@ class TopTrendingSliverBoxAdapter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if(objFSRList == null) objFSRList = <FakeStoreResponsePojo>[];
+    if (objFSRList == null) objFSRList = <FakeStoreResponsePojo>[];
     return Container(
       color: Colors.grey,
       child: Column(
@@ -38,7 +38,8 @@ class TopTrendingSliverBoxAdapter extends StatelessWidget {
                                 height: 100,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: NetworkImage(objFSRList[index].image),
+                                    image:
+                                        NetworkImage(objFSRList[index].image),
                                     // image: NetworkImage(
                                     //     'https://freepngimg.com/thumb/headphones/5-blue-headphones-png-image.png'),
                                     fit: BoxFit.fill,

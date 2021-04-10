@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:slivers_ecomm_demo/fakeStoreResponsePojo.dart';
+import 'package:slivers_ecomm_demo/app/fakeStoreResponsePojo.dart';
 
 class ItemColumnWidget extends StatelessWidget {
   // final double cardWidth;
